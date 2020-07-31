@@ -1,0 +1,9 @@
+r1k.tsp
+r2k.tsp
+r3k.tsp
+r4k.tsp
+r5k.tsp
+r6k.tsp
+r7k.tsp
+r8k.tsp
+r9k.tsp

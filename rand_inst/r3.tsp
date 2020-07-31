@@ -1,0 +1,10 @@
+NAME: random3
+TYPE: TSP
+COMMENT: random graph with 3 nodes
+DIMENSION: 3
+EDGE_WEIGHT_TYPE: EUC_2D
+NODE_COORD_SECTION
+1 0.0 0.0
+2 0.0 1.0
+3 1.0 0.0
+EOF

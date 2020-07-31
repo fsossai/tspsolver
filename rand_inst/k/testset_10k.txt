@@ -1,0 +1,10 @@
+r10k.tsp
+r20k.tsp
+r30k.tsp
+r40k.tsp
+r50k.tsp
+r60k.tsp
+r70k.tsp
+r80k.tsp
+r90k.tsp
+r100k.tsp

@@ -1,0 +1,7 @@
+rl11849.tsp
+usa13509.tsp
+brd14051.tsp
+d15112.tsp
+d18512.tsp
+
+
