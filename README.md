@@ -21,7 +21,7 @@ Constructive and metaheuristics approaches, on the other hand, do not require mu
 household computer.
 
 ## Implemented methods
-<img src="images/eil76.png" align="right" width="542" height="313"></img>
+<img src="images/eil76-subtours.png" align="right" width="434" height="250"></img>
 #### MIP formulations and Lazy callbacks methods
 - **DFJ** : Dantzig-Fulkerson-Johnson (1954)
 - **MTZ** : Miller-Tucker-Zemlin (1960)
