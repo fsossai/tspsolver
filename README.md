@@ -21,6 +21,7 @@ Constructive and metaheuristics approaches, on the other hand, do not require mu
 household computer.
 
 ## Implemented methods
+<img src="images/eil76.png" align="right" width="542" height="313"></img>
 #### MIP formulations and Lazy callbacks methods
 - **DFJ** : Dantzig-Fulkerson-Johnson (1954)
 - **MTZ** : Miller-Tucker-Zemlin (1960)
@@ -34,10 +35,13 @@ In this way the problem submitted to the solver is smaller than the original one
 - **Local Branching** : Given an initial non-optimal solution, a new constraint is added to the model: the user decides how many arcs to fix,
 whereas choosing _which ones_ is up to the solver.
 #### Constructive heuristics
+
 <img src="images/time_comp_heuristics_small.png" align="left" width="336" height="281"></img>
+
 - **First Nearest Neighbor (FNN)** : A tour is constructed starting from a random node and iteratively connecting the latest to the nearest node that has not been added yet.
 - **GRASP** : A tour is contructed as in FNN, but the choice of the next node is randomized according to an arbitrary probability distribution.
 - **Insertion method** : At every iteration, a random 2-node-tour tour is enriched with a new node, through the removal of an edge and the insertion of the node by adding two new edges. The next node to be inserted is randomly selected but the arcs to be modified are choosen in order to minimize the cost of insertion.
+
 
 #### k-opt Refiners
 - **2-opt refiner** : The algorithm searches for every possible pair of arcs to be crossed in order to reduce the tour cost, it crosses the pair that gives
@@ -61,7 +65,7 @@ it reaches a plateau after a while.
 Variable Neighborhood Search (VNS) gave us better accuracy performance than Hard Fixing and Local Branching improving the incumbent solution by a
 factor of 3.15%, as opposed to 1.64% and 0.39% of the other approaches.
 
-<img src="images/ALL_impr.png" align="center" width="922" height="356"></img>
+<p align="center"><img src="images/ALL_impr.png" align="center" width="922" height="356"></img></p>
 
 _How much can these methods improve an initial solution obtained with FNN + 2opt refining? VNS leads to the highest average improvement in 1 hour of computation._
 
