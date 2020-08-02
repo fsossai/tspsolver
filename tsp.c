@@ -97,7 +97,7 @@ void add_sec_cb(solution * sol, int nnodes, CPXCENVptr env, void* cbdata, int wh
 			}
 		}
 		// applying cut
-		if (CPXcutcallbackadd(env, cbdata, wherefrom, nzcnt, rhs, sense, cut_indexes, values, 0))
+		if (CPXcutcallbackadd(env, cbdata, wherefrom, nzcnt, rhs, sense, cut_indexes, values, CPX_USECUT_FORCE))
 			print_error("CPXcutcallbackadd() error");
 
 		i += comp_counter[k];
