@@ -97,7 +97,7 @@ void add_sec_cb(solution * sol, int nnodes, CPXCENVptr env, void* cbdata, int wh
 			}
 		}
 		// applying cut
-		if (CPXcutcallbackadd(env, cbdata, wherefrom, nzcnt, rhs, sense, cut_indexes, values, 0))
+		if (CPXcutcallbackadd(env, cbdata, wherefrom, nzcnt, rhs, sense, cut_indexes, values, CPX_USECUT_FORCE))
 			print_error("CPXcutcallbackadd() error");
 
 		i += comp_counter[k];
@@ -1380,7 +1380,7 @@ int hf_set_bounds(solution * sol, CPXENVptr env, CPXLPptr lp, double prob_of_fix
 	double random_number;
 	int num_fixed_arches = 0;
 	int index;
-	for (int i = 0; i < nnodes; i++)
+	for (int i = 0; i < nnodes - 1; i++)
 		for (int j = i + 1; j < nnodes; j++)
 		{
 			index = xpos(i, j, nnodes);
