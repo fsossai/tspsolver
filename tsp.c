@@ -2294,7 +2294,6 @@ void solve_lp(solution * sol, CPXENVptr env, CPXLPptr lp)
 	case 9:
 		sol->heuristic_method = first_nearest_neighbor;
 		multi_start_parallel(sol);
-		refine(sol);
 		break;
 	case 10:
 		sol->heuristic_method = k_nearest_neighbors;
@@ -2465,7 +2464,7 @@ void multi_start_parallel(solution * sol)
 		free(best_solution);
 	}
 
-	printf("Final best solution cost: %.2f\n", min_cost);
+	printf("Final best solution cost: %.2f\n", sol->latest_cost);
 }
 
 double obtain_SA_mean_iteration_per_sec(solution * sol, double initial_temperature, double final_temperature, double normalizing_factor)
